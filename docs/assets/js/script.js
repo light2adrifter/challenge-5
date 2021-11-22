@@ -24,7 +24,7 @@ if (workEvents) {
 
 $("#currentDay").text(today);
 
-/* Creates rows that will have our block color,adds classes, adds css due to classes */
+/* Creates rows that will have our block color,adds classes, adds css due to classes thanks to bootstrap and CSS stylesheet*/
 planWorkday.forEach(function(timeBlock, index) {
 	var timeLabel = timeBlock.time;
 	var blockColor = colorRow(timeLabel);
