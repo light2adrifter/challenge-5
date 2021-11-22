@@ -9,7 +9,7 @@ The following animation demonstrates the application functionality:
 ## Links
 
 
-* The URL of the deployed application .
+* The URL of the deployed application: https://light2adrifter.github.io/challenge-5/ .
 
-* The URL of the GitHub repository . 
+* The URL of the GitHub repository: https://github.com/light2adrifter/challenge-5 . 
 
