@@ -3,7 +3,7 @@ $(function () {});
 var today = moment().format("dddd, MMMM Do");
 var now = moment().format("H A");
 
-/* Entries for each hour of the workday, 9am-5pm */
+/* Array for each hour of the workday, 9am-5pm */
 var planWorkday = [
     { time: "9 AM", event: "" },
     { time: "10 AM", event: "" },
@@ -24,7 +24,7 @@ if (workEvents) {
 
 $("#currentDay").text(today);
 
-/* Creates rows */
+/* Creates rows that will have our block color,adds classes, adds css due to classes */
 planWorkday.forEach(function(timeBlock, index) {
 	var timeLabel = timeBlock.time;
 	var blockColor = colorRow(timeLabel);
@@ -43,7 +43,7 @@ planWorkday.forEach(function(timeBlock, index) {
 	$(".container").append(row);
 });
 
-/* Colors rows based on current time */
+/* Colors rows based on current time, called by above function */
 function colorRow(time) {
 	var planNow = moment(now, "H A");
 	var planEntry = moment(time, "H A");
@@ -56,7 +56,7 @@ function colorRow(time) {
 	}
 }
 
-/* Saves Events */
+/* Save Event clicker on button*/
 $(".saveBtn").on("click", function() {
 	var blockID = parseInt(
 		$(this)
